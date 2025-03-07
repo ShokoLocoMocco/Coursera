@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+* {
+    box-sizing: border-box; /*not the content-box. this does not inherit so nee to set under '* (universal)"  */
+    margin: 0; /* Ensure no default margin affects the layout */
+    padding: 0;
+    overflow: auto; 
+}
+
+html, body {
+    height: 100%;
+    font-family: "Madimi One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+ 
+
+h1 {
+    margin: 2.5rem ;
+    text-align: center;
+}
+
+
+#menu-container {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.menu {
+    background-color: #BEBEBE;
+    border-style: solid;
+    border-width:  3px;
+    border-color: black;
+    margin: 0 auto 20px auto;
+    align-items: right;
+}
+
+
+
+h2 {
+    font-size: 1.2em;
+    margin: 2px;
+    text-align: center;
+}
+
+
+.type {
+    padding: 0px auto 0px auto;
+    border-style: solid;
+    border-width: 0 0 3px 3px;
+    float: right;
+    width: 120px;
+}
+
+#chicken {
+    background-color: pink;
+}
+
+#beef {
+    background-color: brown;
+    color: white;
+    border-color: black;
+}
+
+#sushi {
+    background-color: lightgoldenrodyellow;
+}
+
+.row {
+    padding: 15px;
+    clear: right;
+}
+
+@media (min-width: 767px) {
+    #menu-container {
+        width: 90%;
+    }
+
+    #half{
+        float: left;
+        width: 50%;
+        padding: 10px;
+    }
+
+    #full {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu {
+        margin: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    #menu-container {
+        width: 95%;
+    }
+    
+    #half, #full {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+    }
+
+}
+
+
+
